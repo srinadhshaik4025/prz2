@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Nunito:wght@300;400;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.5s;
+    overflow-x: hidden !important;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    overflow: hidden;  
+}
+
+img {
+    filter: grayscale(100%);
+    transition: 0.5s all;
+  }
+
+  img:hover{
+      filter: grayscale(0%);
+  }
+
+
+/* navbar section */
+
+.navbar {
+    background-color :rgba(0, 0, 0, 0.6);
+}
+ .navbar-brand{
+     color: #fff !important;
+     font-family: 'El Messiri', sans-serif;
+     font-weight: 900;
+ }
+
+ .menu-bar .navbar-toggler{
+     padding-right: 20px;
+     outline: none !important;
+     border: none !important;
+ }
+
+ .navbar .fa{
+     color: #fff !important;
+     font-size: 26px;
+ }
+
+.navbar-nav{
+    text-align: left;
+    margin-right: 30px;
+ }
+
+ 
+.nav-link{
+    font-size: 1rem;
+    padding: 8px 20px !important;
+    color: #fff !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+   
+}
+
+.nav-item .nav-link:hover{
+   
+    background-color: #fff;
+    border-radius: 19px;
+    color: black !important;
+}
+
+
+@media only screen and  (max-width : 1000px){
+    .nav-link:hover{
+        border-bottom: 1px solid transparent;
+    }
+    
+}
+/* navbar section ends */
+
+
+/* hero section */
+
+.banner-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("poor7png.png");
+    background-size: cover;
+}
+
+
+.banner-image h1{
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+
+.custbtn {
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    background: none;
+    outline: none !important;
+    padding: 4px 39px;
+    font-size: 1.5rem;
+    margin: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+}
+
+.custbtn:hover{
+    background-color: #fff;   
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+
+
+@media only screen and  (max-width : 788px){
+    h1{
+        font-size: 2rem;
+        font-weight: 710;
+        letter-spacing: 2px;
+    }
+    .custbtn{
+        padding: 11px 39px;
+        font-size: 1rem;
+    }    
+}
+
+
+@media only screen and  (max-width : 662px){
+    h1{
+        font-size: 1.6rem;
+        font-weight: 710;
+        letter-spacing: 1px;
+    }
+    .custbtn{
+        padding: 11px 39px;
+        font-size: 1rem;
+    }    
+}
+
+@media only screen and  (max-width : 393px){
+    h1{
+        font-size: 1.3rem;
+        font-weight: 710;
+        letter-spacing: 4px !important;
+        padding: 0 1rem;
+    }
+    .custbtn{
+        padding: 8px 30px;
+        font-size: 1rem;
+    }   
+    
+    .banner-image{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("poor7png.png");
+        background-size: cover;
+        background-position: right top;
+    }
+    
+}
+
+/* end of main home section with media queries */
+
+/* about section starts */
+.about-section{
+    margin-top: 20px;
+}
+
+.about-content {
+    margin-right: 26px;
+    padding: 29px;
+}
+.about-section .about-content h1{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 15px 26px;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid black;
+    background: linear-gradient(315deg, #000000 0%, #414141 74%);
+    border-radius: 20px;
+}
+
+.about-section .about-content p{
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+
+}
+.about-section img{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.about-section .btn{
+    border: 1px solid #000;
+    border-radius: 25px;
+    color: #000;
+    background: none;
+    outline: none !important;
+    padding: 4px 16px;
+    font-size: 1.5rem;
+    margin: 0px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+}
+
+.about-section .btn:hover{
+    background-color: #212121;
+    color: #fff;
+}
+
+
+@media only screen and  (max-width : 500px){
+    .about-section {
+        margin-top: 20px;
+        padding: 13px;
+    }
+    .about-content {
+        margin-top: 0;
+        margin-right: 12px;
+        padding: 0px;
+    }
+    .about-section .about-content h1{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .about-section .about-content p{
+        text-align: justify;
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 1.6;
+    
+    }
+    .about-section img{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .about-section .btn{
+        border: 1px solid #000;
+        border-radius: 25px;
+        color: #000;
+        background: none;
+        outline: none !important;
+        padding: 3px 33px;
+        font-size: 18px;
+        margin: 0px;
+        margin-bottom: 0px;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        margin-bottom: 14px;
+        text-align: center;
+    }
+    
+    
+}
+
+
+/* about section ends*/
+
+/* team section */
+[class*='col-']{
+
+    overflow: hidden;
+}
+
+#team{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#team .tm{
+    background: #FFF;
+    padding: 30px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: all 0.5s;
+    
+}
+
+#team .tm img{
+    margin-bottom: 15px;
+}
+
+#team .tm h3{
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+}
+#team .tm h4{
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+#team .tm p{
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#team .tm .fb{
+    color: black;
+    font-size: 25px;
+    margin-right: 15px;
+}
+#team .tm .tw{
+    color: black;
+    font-size: 25px;
+    
+}
+
+#team .tm .fb:hover, #team .tm .tw:hover{
+    color: #fff;
+    background-color: black;
+}
+
+#team h1.team-title{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 15px 127px;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid black;
+    background: linear-gradient(315deg, #000000 0%, #414141 74%);
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#team .tm:hover{
+    background: linear-gradient(315deg, #000000 0%, #414141 74%);
+    cursor: pointer;
+    color: #fff;
+}
+
+
+@media only screen and  (max-width : 760px){
+
+  
+    #team {
+        padding: 15px;
+        margin-top: 20px;
+    }
+    #team .tm{
+        background: #FFF;
+        padding: 33px 22px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        margin-bottom: 19px;
+    }
+    
+    #team .tm img{
+        margin-bottom: 15px;
+    }
+    
+    #team .tm h3{
+        font-weight: 700;
+        letter-spacing: 1.3px;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 22px;
+        text-align: center;
+    }
+    #team .tm h4{
+        font-weight: 600;
+        letter-spacing: 1.3px;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: center;
+    }
+    #team .tm p{
+        margin-top: 5px;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    #team .tm .fb{
+        color: black;
+        font-size: 25px;
+        margin-right: 15px;
+    }
+    #team .tm .tw{
+        color: black;
+        font-size: 25px;
+        
+    }
+    
+    #team .tm .fb:hover, #team .tm .tw:hover{
+        color: #fff;
+        background-color: black;
+    }
+    
+    #team h1.team-title{
+        color: white;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        padding: 15px 26px;
+        margin-bottom: 1rem;
+        border-bottom: 3px solid black;
+        background: linear-gradient(315deg, #000000 0%, #414141 74%);
+        border-radius: 40px;
+        text-transform: uppercase;
+    }
+    #team .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+   
+    
+}
+/* team section ends */
+
+
+/* Our services  Starts*/
+
+.services {
+    margin-top: 20px;
+    padding: 20px;
+}
+.services .card {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0;
+    margin-bottom: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.services .card-body {
+    padding: 0.5rem;
+    text-align: center;
+}
+.services .card-title {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.services .card-subtitle {
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.services .card-deck .card {
+
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+
+}
+.services .card-deck .card {
+
+    margin-bottom: 15px;
+
+}
+.services .card {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0;
+
+}
+
+.services .services-title{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 15px 127px;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid black;
+    background: linear-gradient(315deg, #000000 0%, #414141 74%);
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
+@media only screen and  (max-width : 760px){
+    .services {
+        margin-top: 20px;
+        padding: 15px;
+    }
+    .services h1.services-title {
+        padding: 18px 10px;
+        display: block;
+    }
+   
+    
+}
+
+
+/* Our services  Ends*/
+
+
+/* FAQ */
+
+.faq {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.faq .card{
+    border: none !important;
+}
+.accordion > .card > .card-header {
+
+    border-radius: 0;
+    margin-bottom: 0px;
+    border: none !important;
+    padding: 0px !important;
+
+}
+.faq .card-body{
+    padding: 10px 16px;
+}
+
+.faq .btn-link {
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.faq .fa, .fas {
+    font-weight: 900;
+    font-size: 20px;
+    padding: 0px 8px;
+}
+
+.faq .btn {   
+    padding: 0px;   
+}
+.faq-header .faq-title{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 15px 45px;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid black;
+    background: linear-gradient(315deg, #000000 0%, #414141 74%);
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+@media only screen and (max-width:576px){
+    .faq {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .accordion > .card > .card-header {
+
+        border-radius: 0;
+        margin-bottom: 0px;
+        border: none !important;
+        padding: 0px !important;
+    
+    }
+    
+    .faq .card-body{
+        padding: 8px 10px;
+        text-align: justify;
+    }
+    
+    .faq .btn-link {
+        font-weight: 500;
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .faq .fa, .fas {
+        font-weight: 900;
+        font-size: 20px;
+        padding: 0px 3px;
+    }
+    
+    .faq .btn {
+        text-align: left;
+        padding: 0px;
+    }
+
+}
+
+/* Contact Us section */
+.contact{
+    background: linear-gradient(315deg, #000000 0%, #414141 74%);
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 40px;
+    
+}
+
+.cf {
+    padding: 10px 30px;
+}
+
+.contact-header .heading-title {
+    /* color: white;
+    font-size: 35px; */
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 15px 45px;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid black;
+    background: linear-gradient(315deg, #000000 0%, #414141 74%);
+    border-radius: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-control {
+    border: 2px solid #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-control:hover{
+    cursor: pointer;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color:none !important;
+    border-color: black !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.contact .btn:hover{
+    color: #fff;
+    background-color: black;
+}
+
+@media only screen and (max-width:576px){
+    .contact {
+        background: linear-gradient(315deg, #000000 0%, #414141 74%);
+        margin: 12px;
+        border: 1px solid black;
+        border-radius: 40px;
+    }
+
+    .contact-header .heading-title {
+        color: white;
+        font-size: 35px;
+        font-size: 18px;
+    }
+}
+/* contact section end */
+
+/* Footer section starts */
+.footer {
+    border: 2px solid black;
+    background: linear-gradient(315deg, #000000 0%, #414141 74%);
+    padding-top: 14px;
+}
+
+.fc{
+    margin: 20px;
+}
+
+.footer .row {
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .fas{
+  font-size: 25px;
+}
+
+.footer .fab {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.footer .row2{
+    text-align: center;
+}
+
+.footer p{
+    margin-top: 0;
+     margin-bottom: 0;
+}
+
+.footer .fas:hover, .footer .fab:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width:576px){
+    .fc{
+        margin: 0;
+    }
+    .footer {
+        padding: 6px;
+    }
+
+   .footer [class*="col-"] {
+        overflow: hidden;
+        text-align: start;
+    }
+
+}
+
+
+
+/* Footer section ends */
